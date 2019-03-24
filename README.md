@@ -1,8 +1,10 @@
 # chemistry-grants-cluster
 This script accepts National Science Foundation Awards data and sorts the awards into different topical clusters based on the award's abstract text.
-The data I used focused on the Division of Chemistry and included abstracts from all awards made from 01/01/2015 to present. These can be downloaded here as well: https://www.nsf.gov/awardsearch/advancedSearchResult?PIId=&PIFirstName=&PILastName=&PIOrganization=&PIState=&PIZip=&PICountry=&ProgOrganization=03090000&ProgEleCode=&BooleanElement=All&ProgRefCode=&BooleanRef=All&Program=&ProgOfficer=&Keyword=&AwardNumberOperator=&AwardAmount=&AwardInstrument=&ActiveAwards=true&OriginalAwardDateOperator=After&OriginalAwardDateFrom=01%2F01%2F2015&StartDateOperator=&ExpDateOperator=
+The data I used focused on the Division of Chemistry and included abstracts from all awards made from 01/01/2015 to present. It can be downloaded here: 
 
-The script accepts the exported CSV version of this data.  The user provides a program element code, the number of topical clusters they want to investigate and the awards csv file. The abstract text is cleaned, lemmatized, and tokenized before it is used in an LDA model. The LDA model creates topic clusters by assigning weight values to certain words. Each award can then be sorted into the topic areas.
+https://www.nsf.gov/awardsearch/advancedSearchResult?PIId=&PIFirstName=&PILastName=&PIOrganization=&PIState=&PIZip=&PICountry=&ProgOrganization=03090000&ProgEleCode=&BooleanElement=All&ProgRefCode=&BooleanRef=All&Program=&ProgOfficer=&Keyword=&AwardNumberOperator=&AwardAmount=&AwardInstrument=&ActiveAwards=true&OriginalAwardDateOperator=After&OriginalAwardDateFrom=01%2F01%2F2015&StartDateOperator=&ExpDateOperator=
+
+The script accepts the exported CSV version of this data.  The user provides a program element code, the number of topical clusters they want to investigate and the awards csv file. The abstract text is cleaned, lemmatized, and tokenized before it is used in an LDA model. The LDA model creates topic clusters. Each award can then be sorted into the topic areas.
 
 The Script outputs a histogram showing how many awards are in each generated topic area, word clouds showing the words associated with each topic area (with the size signifiying the word's weight in each topic), and a t-SNE plot giving a visual representation of topic-awards clustering.
 
