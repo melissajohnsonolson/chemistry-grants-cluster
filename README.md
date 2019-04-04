@@ -6,7 +6,7 @@ https://www.nsf.gov/awardsearch/advancedSearchResult?PIId=&PIFirstName=&PILastNa
 
 The script accepts the exported CSV version of this data.  The user provides a program element code, the number of topical clusters they want to investigate and the awards csv file. The abstract text is cleaned, lemmatized, and tokenized before it is used in an LDA model. The LDA model creates topic clusters. Each award can then be sorted into the topic areas.
 
-The Script outputs a histogram showing how many awards are in each generated topic area, word clouds showing the words associated with each topic area (with the size signifiying the word's weight in each topic), and a t-SNE plot giving a visual representation of topic-awards clustering.
+The Script outputs a frequency plot showing how many awards are in each generated topic area, word clouds showing the words associated with each topic area (with the size signifiying the word's weight in each topic), and a t-SNE plot giving a visual representation of topic-awards clustering.
 
 The core programs in the division of chemistry have the following program element codes:
 6878 - Chemical Synthesis
